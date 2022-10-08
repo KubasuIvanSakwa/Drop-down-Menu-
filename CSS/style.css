@@ -1,0 +1,80 @@
+:root{
+  --unit:10px;
+  --yellow:#F2BB05;
+  --blue:#1B998B;
+  --orange:#D74E09;
+  --navy:#1A1423;
+  --background: black;
+
+}
+
+body {
+  background-color: var(--background);
+}
+
+
+
+  .mobile{
+   margin: 10px 10px;
+   position: relative;
+   display: inline-block;
+   width: 200px;
+   height: 40px;
+   border-radius: 20px;
+   background-color: white;
+   animation: chan_color 3s cubic-bezier(.24,.01,.42,1.4) infinite alternate;
+  }
+  
+
+   #navig{
+   z-index: 3;
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    background-color: blue;
+    border-radius: 20px;
+    min-width: 160px;   
+  }
+  
+ #navig a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #navig a:hover {
+  background-color: red;
+  border-radius: 20px;
+  }
+  
+  .mobile:hover #navig{
+   display: block;
+  }
+  
+h4{
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 70px;
+}
+
+  .mobile:hover h4{
+    display: none;
+    }
+   
+
+  
+     
+
+  @keyframes chan_color{
+  100%{
+    background-color: red;
+    translate: transformX(100%); 
+  }
+  50% {
+    background-color: ruby; 
+  }
+}
+  
+
+
